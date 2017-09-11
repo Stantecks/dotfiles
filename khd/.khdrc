@@ -1,6 +1,10 @@
 # reload config
 cmd + alt + ctrl - r : khd -e "reload"
 
+# disable/enable ffm
+cmd + ctrl + alt + shift - m : chunkc core::load ffm.so
+cmd + ctrl + alt - m : chunkc core::unload ffm.so
+
 # open terminal, blazingly fast compared to iTerm/Hyper
 # cmd - return : open -na /Applications/Google\ Chrome.app
 
