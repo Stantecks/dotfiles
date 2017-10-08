@@ -151,7 +151,7 @@ ctrl + alt - d : chunkc tiling::desktop --layout float
 
 # remap caps-lock to escape for this config only !!!
 # macos sierra can also perform this remap for a given keyboard
-- capslock : khd -p "- escape"
+# - capslock : khd -p "- escape"
 
 # key remap for norwegian layout \ { }
 # cmd - 7 : khd -p "shift + alt - 7"
