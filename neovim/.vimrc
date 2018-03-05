@@ -49,6 +49,9 @@ call plug#begin('~/.config/nvim/bundle')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" pywal
+Plug 'dylanaraps/wal.vim'
+
 " Syntax & autocomplete stuff
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'pangloss/vim-javascript'
@@ -96,7 +99,7 @@ let g:deoplete#enable_at_startup = 1
 cnoreabbrev Ack Ack!
 
 let g:loaded_python_provider = 1
-colorscheme CandyPaper
+colorscheme wal 
 
 " Supposed to make leaving insert mode faster
 set ttimeoutlen=50

@@ -1,10 +1,14 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/Users/StanHub/anaconda/bin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=/Users/StanHub/sra-toolkit/bin:$PATH
 export PYTHONPATH=${PYTHONPATH}:$HOME/biocomp_bootcamp/bootcamp
-
+export PATH=/Developer/NVIDIA/CUDA-9.0/bin${PATH:+:${PATH}}
+export DYLD_LIBRARY_PATH="/Developer/NVIDIA/CUDA-9.0/lib\
+                         ${DYLD_LIBRARY_PATH:+:${DYLD_LIBRARY_PATH}}"
+export DYLD_LIBRARY_PATH="/usr/local/cuda/lib":$DYLD_LIBRARY_PATH
+export CMAKE_C_COMPILER=/usr/bin/clang
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/StanHub/.oh-my-zsh
 
@@ -55,6 +59,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
 plugins=(web-search taskwarrior brew autojump osx sudo)
 gitPreAutoStatusCommands=(
     'add'
@@ -120,3 +125,5 @@ export PATH="/usr/local/sbin:$PATH"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+(wal -r &)
